@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NotifierAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NotifierAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		426D23BC14F4BC8700942167 /* 叮当.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23B514F4BC8500942167 /* 叮当.caf */; };
+		426D23BD14F4BC8700942167 /* 非常有趣.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23B614F4BC8600942167 /* 非常有趣.caf */; };
+		426D23BE14F4BC8700942167 /* 懒猪起床.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23B714F4BC8600942167 /* 懒猪起床.caf */; };
+		426D23BF14F4BC8700942167 /* 梦幻.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23B814F4BC8600942167 /* 梦幻.caf */; };
+		426D23C014F4BC8700942167 /* 起床铃声.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23B914F4BC8600942167 /* 起床铃声.caf */; };
+		426D23C114F4BC8700942167 /* 三星优美闹钟铃声.caf in Resources */ = {isa = PBXBuildFile; fileRef = 426D23BA14F4BC8700942167 /* 三星优美闹钟铃声.caf */; };
+		426D23C314F4BD9A00942167 /* SoundTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426D23C214F4BD9A00942167 /* SoundTableCell.xib */; };
+		426D23C714F4C3B800942167 /* Notifier.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 426D23C614F4C3B800942167 /* Notifier.sqlite */; };
+		428D726214F36A0300A2C04F /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D726114F36A0300A2C04F /* NSString+Additions.m */; };
+		428E13A314F0D21A004A1FF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E13A214F0D21A004A1FF9 /* QuartzCore.framework */; };
+		42BE5C1A14EF932C00134A29 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BE5C1914EF932C00134A29 /* AVFoundation.framework */; };
+		42BE5C1D14EF933600134A29 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BE5C1C14EF933600134A29 /* AudioToolbox.framework */; };
+		42BE5C4414EFACBA00134A29 /* end.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3714EFACBA00134A29 /* end.png */; };
+		42BE5C4514EFACBA00134A29 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3814EFACBA00134A29 /* start.png */; };
+		42BE5C4614EFACBA00134A29 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3914EFACBA00134A29 /* forward.png */; };
+		42BE5C4714EFACBA00134A29 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3A14EFACBA00134A29 /* rewind.png */; };
+		42BE5C4814EFACBA00134A29 /* hight.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3B14EFACBA00134A29 /* hight.png */; };
+		42BE5C4914EFACBA00134A29 /* low.png in Resources */ = {isa = PBXBuildFile; fileRef = 42BE5C3C14EFACBA00134A29 /* low.png */; };
+		42BFC0A114E6523300E3797A /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC09F14E6523300E3797A /* Timer.m */; };
+		42BFC0A214E6523300E3797A /* Timer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0A014E6523300E3797A /* Timer.xib */; };
+		42BFC0AC14E653FC00E3797A /* ClockConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC0AA14E653FC00E3797A /* ClockConfig.m */; };
+		42BFC0AD14E653FC00E3797A /* ClockConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0AB14E653FC00E3797A /* ClockConfig.xib */; };
+		42BFC0B114E6541C00E3797A /* ClockTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC0AF14E6541C00E3797A /* ClockTableView.m */; };
+		42BFC0B214E6541C00E3797A /* ClockTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0B014E6541C00E3797A /* ClockTableView.xib */; };
+		42BFC0B614E6559A00E3797A /* EditTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC0B414E6559A00E3797A /* EditTime.m */; };
+		42BFC0B714E6559A00E3797A /* EditTime.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0B514E6559A00E3797A /* EditTime.xib */; };
+		42BFC0BB14E655AF00E3797A /* SoundTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC0B914E655AE00E3797A /* SoundTableView.m */; };
+		42BFC0BC14E655AF00E3797A /* SoundTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0BA14E655AE00E3797A /* SoundTableView.xib */; };
+		42BFC0C014E655C400E3797A /* EditName.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFC0BE14E655C300E3797A /* EditName.m */; };
+		42BFC0C114E655C400E3797A /* EditName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BFC0BF14E655C300E3797A /* EditName.xib */; };
+		42C1A14514EBAB42006710BC /* SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1A14414EBAB42006710BC /* SoundList.m */; };
+		42C32B20152ACAEE00FB99FE /* 布谷鸟.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42C32B1F152ACAEE00FB99FE /* 布谷鸟.caf */; };
+		42C32B32152AD31F00FB99FE /* 布谷鸟.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42C32B2F152AD31F00FB99FE /* 布谷鸟.mp3 */; };
+		42C32B33152AD31F00FB99FE /* 叮当.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42C32B30152AD31F00FB99FE /* 叮当.mp3 */; };
+		42C32B34152AD31F00FB99FE /* 非常有趣.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42C32B31152AD31F00FB99FE /* 非常有趣.mp3 */; };
+		42C70DC114F8C1CF006371DE /* RecordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C70DBF14F8C1CF006371DE /* RecordTableView.m */; };
+		42C70DC414F8C28F006371DE /* RecordTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C70DC314F8C28F006371DE /* RecordTableView.xib */; };
+		42C70DCC14F8DFAA006371DE /* SoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C70DCA14F8DFAA006371DE /* SoundSwitch.m */; };
+		42C70DCD14F8DFAA006371DE /* SoundSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C70DCB14F8DFAA006371DE /* SoundSwitch.xib */; };
+		42CCA2C214EA5E8D00F20C13 /* common_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CCA2C114EA5E8D00F20C13 /* common_bkg.png */; };
+		42D1A59714E901840066142C /* DataBaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A59614E901840066142C /* DataBaseAccess.m */; };
+		42D1A59D14E907DE0066142C /* singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A59C14E907DE0066142C /* singleton.m */; };
+		42D1C23A14EA05FA00C23A56 /* ClockList.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C23914EA05FA00C23A56 /* ClockList.m */; };
+		42D1C24514EA16EA00C23A56 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C24014EA16EA00C23A56 /* FMDatabaseAdditions.m */; };
+		42D1C24614EA16EA00C23A56 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C24214EA16EA00C23A56 /* FMDatabase.m */; };
+		42D1C24714EA16EA00C23A56 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C24414EA16EA00C23A56 /* FMResultSet.m */; };
+		42D1C24914EA1CCE00C23A56 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D1C24814EA1CCE00C23A56 /* libsqlite3.dylib */; };
+		42E6F31D14ECCC550004FEC8 /* SoundTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6F31C14ECCC540004FEC8 /* SoundTableCell.m */; };
+		42E6F32314ECD20C0004FEC8 /* sound_image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E6F31F14ECD20C0004FEC8 /* sound_image3.png */; };
+		42E6F32414ECD20C0004FEC8 /* sound_image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E6F32014ECD20C0004FEC8 /* sound_image2.png */; };
+		42E6F32514ECD20C0004FEC8 /* sound_image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E6F32114ECD20C0004FEC8 /* sound_image1.png */; };
+		42E6F32914ECDA7E0004FEC8 /* SoundDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6F32714ECDA7D0004FEC8 /* SoundDetail.m */; };
+		42E6F32A14ECDA7E0004FEC8 /* SoundDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E6F32814ECDA7E0004FEC8 /* SoundDetail.xib */; };
+		42E6F32D14ECEE7A0004FEC8 /* ClockTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6F32C14ECEE7A0004FEC8 /* ClockTableCell.m */; };
+		42E6F33614ED012B0004FEC8 /* EditRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6F33414ED012B0004FEC8 /* EditRepeat.m */; };
+		42E6F33714ED012B0004FEC8 /* EditRepeat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E6F33514ED012B0004FEC8 /* EditRepeat.xib */; };
+		D31A7740171707FA00FF6B64 /* default_img.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A773F171707FA00FF6B64 /* default_img.png */; };
+		D31A774217171B4D00FF6B64 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A774117171B4C00FF6B64 /* alarm.png */; };
+		D31A77441717224100FF6B64 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77431717224100FF6B64 /* Default.png */; };
+		D31A77461717224700FF6B64 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77451717224700FF6B64 /* Default@2x.png */; };
+		D31A77481717224C00FF6B64 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77471717224C00FF6B64 /* Default-568h@2x.png */; };
+		D31A774A171725F200FF6B64 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A7749171725F200FF6B64 /* Icon.png */; };
+		D31A774C171725F700FF6B64 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A774B171725F700FF6B64 /* Icon@2x.png */; };
+		D31A77541717260800FF6B64 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A774E1717260800FF6B64 /* Icon-72.png */; };
+		D31A77551717260800FF6B64 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A774F1717260800FF6B64 /* Icon-Small-50.png */; };
+		D31A77561717260800FF6B64 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77501717260800FF6B64 /* Icon-Small.png */; };
+		D31A77571717260800FF6B64 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77511717260800FF6B64 /* Icon-Small@2x.png */; };
+		D31A77581717260800FF6B64 /* source_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77521717260800FF6B64 /* source_1024.png */; };
+		D31A77591717260800FF6B64 /* source_512.png in Resources */ = {isa = PBXBuildFile; fileRef = D31A77531717260800FF6B64 /* source_512.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NotifierAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifierAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NotifierAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifierAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* 简单闹钟.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "简单闹钟.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* SimpleClock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleClock_Prefix.pch; sourceTree = "<group>"; };
+		426D23B514F4BC8500942167 /* 叮当.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "叮当.caf"; sourceTree = "<group>"; };
+		426D23B614F4BC8600942167 /* 非常有趣.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "非常有趣.caf"; sourceTree = "<group>"; };
+		426D23B714F4BC8600942167 /* 懒猪起床.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "懒猪起床.caf"; sourceTree = "<group>"; };
+		426D23B814F4BC8600942167 /* 梦幻.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梦幻.caf"; sourceTree = "<group>"; };
+		426D23B914F4BC8600942167 /* 起床铃声.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "起床铃声.caf"; sourceTree = "<group>"; };
+		426D23BA14F4BC8700942167 /* 三星优美闹钟铃声.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "三星优美闹钟铃声.caf"; sourceTree = "<group>"; };
+		426D23C214F4BD9A00942167 /* SoundTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundTableCell.xib; sourceTree = "<group>"; };
+		426D23C614F4C3B800942167 /* Notifier.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Notifier.sqlite; sourceTree = "<group>"; };
+		428D726014F36A0300A2C04F /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		428D726114F36A0300A2C04F /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		428E13A214F0D21A004A1FF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		42BE5C1914EF932C00134A29 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42BE5C1C14EF933600134A29 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		42BE5C3714EFACBA00134A29 /* end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = end.png; sourceTree = "<group>"; };
+		42BE5C3814EFACBA00134A29 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		42BE5C3914EFACBA00134A29 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		42BE5C3A14EFACBA00134A29 /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
+		42BE5C3B14EFACBA00134A29 /* hight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hight.png; sourceTree = "<group>"; };
+		42BE5C3C14EFACBA00134A29 /* low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = low.png; sourceTree = "<group>"; };
+		42BFC09E14E6523300E3797A /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = ../Timer.h; sourceTree = "<group>"; };
+		42BFC09F14E6523300E3797A /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = ../Timer.m; sourceTree = "<group>"; };
+		42BFC0A014E6523300E3797A /* Timer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Timer.xib; sourceTree = "<group>"; };
+		42BFC0A914E653FC00E3797A /* ClockConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockConfig.h; path = ../ClockConfig.h; sourceTree = "<group>"; };
+		42BFC0AA14E653FC00E3797A /* ClockConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockConfig.m; path = ../ClockConfig.m; sourceTree = "<group>"; };
+		42BFC0AB14E653FC00E3797A /* ClockConfig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockConfig.xib; sourceTree = "<group>"; };
+		42BFC0AE14E6541C00E3797A /* ClockTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockTableView.h; path = ../ClockTableView.h; sourceTree = "<group>"; };
+		42BFC0AF14E6541C00E3797A /* ClockTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockTableView.m; path = ../ClockTableView.m; sourceTree = "<group>"; };
+		42BFC0B014E6541C00E3797A /* ClockTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockTableView.xib; sourceTree = "<group>"; };
+		42BFC0B314E6559A00E3797A /* EditTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditTime.h; path = ../EditTime.h; sourceTree = "<group>"; };
+		42BFC0B414E6559A00E3797A /* EditTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditTime.m; path = ../EditTime.m; sourceTree = "<group>"; };
+		42BFC0B514E6559A00E3797A /* EditTime.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditTime.xib; sourceTree = "<group>"; };
+		42BFC0B814E655AE00E3797A /* SoundTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundTableView.h; path = ../SoundTableView.h; sourceTree = "<group>"; };
+		42BFC0B914E655AE00E3797A /* SoundTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundTableView.m; path = ../SoundTableView.m; sourceTree = "<group>"; };
+		42BFC0BA14E655AE00E3797A /* SoundTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundTableView.xib; sourceTree = "<group>"; };
+		42BFC0BD14E655C300E3797A /* EditName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditName.h; path = ../EditName.h; sourceTree = "<group>"; };
+		42BFC0BE14E655C300E3797A /* EditName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditName.m; path = ../EditName.m; sourceTree = "<group>"; };
+		42BFC0BF14E655C300E3797A /* EditName.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditName.xib; sourceTree = "<group>"; };
+		42C1A14314EBAB42006710BC /* SoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundList.h; sourceTree = "<group>"; };
+		42C1A14414EBAB42006710BC /* SoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundList.m; sourceTree = "<group>"; };
+		42C32B1F152ACAEE00FB99FE /* 布谷鸟.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "布谷鸟.caf"; sourceTree = "<group>"; };
+		42C32B2F152AD31F00FB99FE /* 布谷鸟.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "布谷鸟.mp3"; sourceTree = "<group>"; };
+		42C32B30152AD31F00FB99FE /* 叮当.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叮当.mp3"; sourceTree = "<group>"; };
+		42C32B31152AD31F00FB99FE /* 非常有趣.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "非常有趣.mp3"; sourceTree = "<group>"; };
+		42C70DBE14F8C1CF006371DE /* RecordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableView.h; sourceTree = SOURCE_ROOT; };
+		42C70DBF14F8C1CF006371DE /* RecordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableView.m; sourceTree = SOURCE_ROOT; };
+		42C70DC314F8C28F006371DE /* RecordTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordTableView.xib; sourceTree = "<group>"; };
+		42C70DC914F8DFAA006371DE /* SoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSwitch.h; sourceTree = "<group>"; };
+		42C70DCA14F8DFAA006371DE /* SoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSwitch.m; sourceTree = "<group>"; };
+		42C70DCB14F8DFAA006371DE /* SoundSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SoundSwitch.xib; path = Classes/SoundSwitch.xib; sourceTree = "<group>"; };
+		42CCA2C114EA5E8D00F20C13 /* common_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = common_bkg.png; sourceTree = "<group>"; };
+		42D1A59514E901830066142C /* DataBaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataBaseAccess.h; path = Classes/DataBaseAccess.h; sourceTree = "<group>"; };
+		42D1A59614E901840066142C /* DataBaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataBaseAccess.m; path = Classes/DataBaseAccess.m; sourceTree = "<group>"; };
+		42D1A59B14E907DE0066142C /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = SOURCE_ROOT; };
+		42D1A59C14E907DE0066142C /* singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleton.m; sourceTree = SOURCE_ROOT; };
+		42D1C23814EA05FA00C23A56 /* ClockList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockList.h; sourceTree = "<group>"; };
+		42D1C23914EA05FA00C23A56 /* ClockList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockList.m; sourceTree = "<group>"; };
+		42D1C23F14EA16EA00C23A56 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		42D1C24014EA16EA00C23A56 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		42D1C24114EA16EA00C23A56 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		42D1C24214EA16EA00C23A56 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		42D1C24314EA16EA00C23A56 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		42D1C24414EA16EA00C23A56 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		42D1C24814EA1CCE00C23A56 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		42E6F31B14ECCC520004FEC8 /* SoundTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTableCell.h; sourceTree = "<group>"; };
+		42E6F31C14ECCC540004FEC8 /* SoundTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTableCell.m; sourceTree = "<group>"; };
+		42E6F31F14ECD20C0004FEC8 /* sound_image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_image3.png; sourceTree = "<group>"; };
+		42E6F32014ECD20C0004FEC8 /* sound_image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_image2.png; sourceTree = "<group>"; };
+		42E6F32114ECD20C0004FEC8 /* sound_image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_image1.png; sourceTree = "<group>"; };
+		42E6F32614ECDA7D0004FEC8 /* SoundDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundDetail.h; path = ../SoundDetail.h; sourceTree = "<group>"; };
+		42E6F32714ECDA7D0004FEC8 /* SoundDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundDetail.m; path = ../SoundDetail.m; sourceTree = "<group>"; };
+		42E6F32814ECDA7E0004FEC8 /* SoundDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundDetail.xib; sourceTree = "<group>"; };
+		42E6F32B14ECEE790004FEC8 /* ClockTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableCell.h; sourceTree = "<group>"; };
+		42E6F32C14ECEE7A0004FEC8 /* ClockTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableCell.m; sourceTree = "<group>"; };
+		42E6F33314ED012B0004FEC8 /* EditRepeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditRepeat.h; path = ../EditRepeat.h; sourceTree = "<group>"; };
+		42E6F33414ED012B0004FEC8 /* EditRepeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditRepeat.m; path = ../EditRepeat.m; sourceTree = "<group>"; };
+		42E6F33514ED012B0004FEC8 /* EditRepeat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditRepeat.xib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* SimpleClock-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleClock-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D31A773F171707FA00FF6B64 /* default_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_img.png; sourceTree = "<group>"; };
+		D31A774117171B4C00FF6B64 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		D31A77431717224100FF6B64 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D31A77451717224700FF6B64 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D31A77471717224C00FF6B64 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D31A7749171725F200FF6B64 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D31A774B171725F700FF6B64 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D31A774E1717260800FF6B64 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		D31A774F1717260800FF6B64 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		D31A77501717260800FF6B64 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		D31A77511717260800FF6B64 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D31A77521717260800FF6B64 /* source_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = source_1024.png; sourceTree = "<group>"; };
+		D31A77531717260800FF6B64 /* source_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = source_512.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E13A314F0D21A004A1FF9 /* QuartzCore.framework in Frameworks */,
+				42BE5C1D14EF933600134A29 /* AudioToolbox.framework in Frameworks */,
+				42BE5C1A14EF932C00134A29 /* AVFoundation.framework in Frameworks */,
+				42D1C24914EA1CCE00C23A56 /* libsqlite3.dylib in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* NotifierAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NotifierAppDelegate.m */,
+				42BFC09E14E6523300E3797A /* Timer.h */,
+				42BFC09F14E6523300E3797A /* Timer.m */,
+				42BFC0AE14E6541C00E3797A /* ClockTableView.h */,
+				42BFC0AF14E6541C00E3797A /* ClockTableView.m */,
+				42E6F32B14ECEE790004FEC8 /* ClockTableCell.h */,
+				42E6F32C14ECEE7A0004FEC8 /* ClockTableCell.m */,
+				42BFC0A914E653FC00E3797A /* ClockConfig.h */,
+				42BFC0AA14E653FC00E3797A /* ClockConfig.m */,
+				42BFC0B314E6559A00E3797A /* EditTime.h */,
+				42BFC0B414E6559A00E3797A /* EditTime.m */,
+				42BFC0BD14E655C300E3797A /* EditName.h */,
+				42BFC0BE14E655C300E3797A /* EditName.m */,
+				42E6F33314ED012B0004FEC8 /* EditRepeat.h */,
+				42E6F33414ED012B0004FEC8 /* EditRepeat.m */,
+				42C70DC914F8DFAA006371DE /* SoundSwitch.h */,
+				42C70DCA14F8DFAA006371DE /* SoundSwitch.m */,
+				42BFC0B814E655AE00E3797A /* SoundTableView.h */,
+				42BFC0B914E655AE00E3797A /* SoundTableView.m */,
+				42C70DBE14F8C1CF006371DE /* RecordTableView.h */,
+				42C70DBF14F8C1CF006371DE /* RecordTableView.m */,
+				42E6F31B14ECCC520004FEC8 /* SoundTableCell.h */,
+				42E6F31C14ECCC540004FEC8 /* SoundTableCell.m */,
+				42E6F32614ECDA7D0004FEC8 /* SoundDetail.h */,
+				42E6F32714ECDA7D0004FEC8 /* SoundDetail.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* 简单闹钟.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D31A774B171725F700FF6B64 /* Icon@2x.png */,
+				D31A7749171725F200FF6B64 /* Icon.png */,
+				D31A77471717224C00FF6B64 /* Default-568h@2x.png */,
+				D31A77451717224700FF6B64 /* Default@2x.png */,
+				D31A77431717224100FF6B64 /* Default.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				428D726014F36A0300A2C04F /* NSString+Additions.h */,
+				428D726114F36A0300A2C04F /* NSString+Additions.m */,
+				42D1A59514E901830066142C /* DataBaseAccess.h */,
+				42D1A59614E901840066142C /* DataBaseAccess.m */,
+				42D1A59B14E907DE0066142C /* singleton.h */,
+				42D1A59C14E907DE0066142C /* singleton.m */,
+				42D1C23814EA05FA00C23A56 /* ClockList.h */,
+				42D1C23914EA05FA00C23A56 /* ClockList.m */,
+				42C1A14314EBAB42006710BC /* SoundList.h */,
+				42C1A14414EBAB42006710BC /* SoundList.m */,
+				42D1C23F14EA16EA00C23A56 /* FMDatabaseAdditions.h */,
+				42D1C24014EA16EA00C23A56 /* FMDatabaseAdditions.m */,
+				42D1C24114EA16EA00C23A56 /* FMDatabase.h */,
+				42D1C24214EA16EA00C23A56 /* FMDatabase.m */,
+				42D1C24314EA16EA00C23A56 /* FMResultSet.h */,
+				42D1C24414EA16EA00C23A56 /* FMResultSet.m */,
+				32CA4F630368D1EE00C91783 /* SimpleClock_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D31A774D1717260800FF6B64 /* AppStore */,
+				D31A773F171707FA00FF6B64 /* default_img.png */,
+				426D23C614F4C3B800942167 /* Notifier.sqlite */,
+				428D725F14F3308D00A2C04F /* Xib */,
+				428D725E14F3306B00A2C04F /* Pic */,
+				42BE5C3614EFACA800134A29 /* Music */,
+				8D1107310486CEB800E47090 /* SimpleClock-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428E13A214F0D21A004A1FF9 /* QuartzCore.framework */,
+				42BE5C1C14EF933600134A29 /* AudioToolbox.framework */,
+				42BE5C1914EF932C00134A29 /* AVFoundation.framework */,
+				42D1C24814EA1CCE00C23A56 /* libsqlite3.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428D725E14F3306B00A2C04F /* Pic */ = {
+			isa = PBXGroup;
+			children = (
+				D31A774117171B4C00FF6B64 /* alarm.png */,
+				42E6F31F14ECD20C0004FEC8 /* sound_image3.png */,
+				42E6F32014ECD20C0004FEC8 /* sound_image2.png */,
+				42E6F32114ECD20C0004FEC8 /* sound_image1.png */,
+				42CCA2C114EA5E8D00F20C13 /* common_bkg.png */,
+			);
+			name = Pic;
+			sourceTree = "<group>";
+		};
+		428D725F14F3308D00A2C04F /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				42BFC0A014E6523300E3797A /* Timer.xib */,
+				42BFC0B014E6541C00E3797A /* ClockTableView.xib */,
+				42BFC0AB14E653FC00E3797A /* ClockConfig.xib */,
+				42BFC0B514E6559A00E3797A /* EditTime.xib */,
+				42BFC0BF14E655C300E3797A /* EditName.xib */,
+				42E6F33514ED012B0004FEC8 /* EditRepeat.xib */,
+				42C70DCB14F8DFAA006371DE /* SoundSwitch.xib */,
+				42BFC0BA14E655AE00E3797A /* SoundTableView.xib */,
+				42C70DC314F8C28F006371DE /* RecordTableView.xib */,
+				426D23C214F4BD9A00942167 /* SoundTableCell.xib */,
+				42E6F32814ECDA7E0004FEC8 /* SoundDetail.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		42BE5C3614EFACA800134A29 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				42C32B2F152AD31F00FB99FE /* 布谷鸟.mp3 */,
+				42C32B30152AD31F00FB99FE /* 叮当.mp3 */,
+				42C32B31152AD31F00FB99FE /* 非常有趣.mp3 */,
+				42C32B1F152ACAEE00FB99FE /* 布谷鸟.caf */,
+				426D23B514F4BC8500942167 /* 叮当.caf */,
+				426D23B614F4BC8600942167 /* 非常有趣.caf */,
+				426D23B714F4BC8600942167 /* 懒猪起床.caf */,
+				426D23B814F4BC8600942167 /* 梦幻.caf */,
+				426D23B914F4BC8600942167 /* 起床铃声.caf */,
+				426D23BA14F4BC8700942167 /* 三星优美闹钟铃声.caf */,
+				42BE5C3714EFACBA00134A29 /* end.png */,
+				42BE5C3814EFACBA00134A29 /* start.png */,
+				42BE5C3914EFACBA00134A29 /* forward.png */,
+				42BE5C3A14EFACBA00134A29 /* rewind.png */,
+				42BE5C3B14EFACBA00134A29 /* hight.png */,
+				42BE5C3C14EFACBA00134A29 /* low.png */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		D31A774D1717260800FF6B64 /* AppStore */ = {
+			isa = PBXGroup;
+			children = (
+				D31A774E1717260800FF6B64 /* Icon-72.png */,
+				D31A774F1717260800FF6B64 /* Icon-Small-50.png */,
+				D31A77501717260800FF6B64 /* Icon-Small.png */,
+				D31A77511717260800FF6B64 /* Icon-Small@2x.png */,
+				D31A77521717260800FF6B64 /* source_1024.png */,
+				D31A77531717260800FF6B64 /* source_512.png */,
+			);
+			path = AppStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* SimpleClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleClock" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleClock;
+			productName = Notifier;
+			productReference = 1D6058910D05DD3D006BFB54 /* 简单闹钟.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleClock" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* SimpleClock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				42BFC0A214E6523300E3797A /* Timer.xib in Resources */,
+				42BFC0AD14E653FC00E3797A /* ClockConfig.xib in Resources */,
+				42BFC0B214E6541C00E3797A /* ClockTableView.xib in Resources */,
+				42BFC0B714E6559A00E3797A /* EditTime.xib in Resources */,
+				42BFC0BC14E655AF00E3797A /* SoundTableView.xib in Resources */,
+				42BFC0C114E655C400E3797A /* EditName.xib in Resources */,
+				42CCA2C214EA5E8D00F20C13 /* common_bkg.png in Resources */,
+				42E6F32314ECD20C0004FEC8 /* sound_image3.png in Resources */,
+				42E6F32414ECD20C0004FEC8 /* sound_image2.png in Resources */,
+				42E6F32514ECD20C0004FEC8 /* sound_image1.png in Resources */,
+				42E6F32A14ECDA7E0004FEC8 /* SoundDetail.xib in Resources */,
+				42E6F33714ED012B0004FEC8 /* EditRepeat.xib in Resources */,
+				42BE5C4414EFACBA00134A29 /* end.png in Resources */,
+				42BE5C4514EFACBA00134A29 /* start.png in Resources */,
+				42BE5C4614EFACBA00134A29 /* forward.png in Resources */,
+				42BE5C4714EFACBA00134A29 /* rewind.png in Resources */,
+				42BE5C4814EFACBA00134A29 /* hight.png in Resources */,
+				42BE5C4914EFACBA00134A29 /* low.png in Resources */,
+				426D23BC14F4BC8700942167 /* 叮当.caf in Resources */,
+				426D23BD14F4BC8700942167 /* 非常有趣.caf in Resources */,
+				426D23BE14F4BC8700942167 /* 懒猪起床.caf in Resources */,
+				426D23BF14F4BC8700942167 /* 梦幻.caf in Resources */,
+				426D23C014F4BC8700942167 /* 起床铃声.caf in Resources */,
+				426D23C114F4BC8700942167 /* 三星优美闹钟铃声.caf in Resources */,
+				426D23C314F4BD9A00942167 /* SoundTableCell.xib in Resources */,
+				426D23C714F4C3B800942167 /* Notifier.sqlite in Resources */,
+				42C70DC414F8C28F006371DE /* RecordTableView.xib in Resources */,
+				42C70DCD14F8DFAA006371DE /* SoundSwitch.xib in Resources */,
+				42C32B20152ACAEE00FB99FE /* 布谷鸟.caf in Resources */,
+				42C32B32152AD31F00FB99FE /* 布谷鸟.mp3 in Resources */,
+				42C32B33152AD31F00FB99FE /* 叮当.mp3 in Resources */,
+				42C32B34152AD31F00FB99FE /* 非常有趣.mp3 in Resources */,
+				D31A7740171707FA00FF6B64 /* default_img.png in Resources */,
+				D31A774217171B4D00FF6B64 /* alarm.png in Resources */,
+				D31A77441717224100FF6B64 /* Default.png in Resources */,
+				D31A77461717224700FF6B64 /* Default@2x.png in Resources */,
+				D31A77481717224C00FF6B64 /* Default-568h@2x.png in Resources */,
+				D31A774A171725F200FF6B64 /* Icon.png in Resources */,
+				D31A774C171725F700FF6B64 /* Icon@2x.png in Resources */,
+				D31A77541717260800FF6B64 /* Icon-72.png in Resources */,
+				D31A77551717260800FF6B64 /* Icon-Small-50.png in Resources */,
+				D31A77561717260800FF6B64 /* Icon-Small.png in Resources */,
+				D31A77571717260800FF6B64 /* Icon-Small@2x.png in Resources */,
+				D31A77581717260800FF6B64 /* source_1024.png in Resources */,
+				D31A77591717260800FF6B64 /* source_512.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NotifierAppDelegate.m in Sources */,
+				42BFC0A114E6523300E3797A /* Timer.m in Sources */,
+				42BFC0AC14E653FC00E3797A /* ClockConfig.m in Sources */,
+				42BFC0B114E6541C00E3797A /* ClockTableView.m in Sources */,
+				42BFC0B614E6559A00E3797A /* EditTime.m in Sources */,
+				42BFC0BB14E655AF00E3797A /* SoundTableView.m in Sources */,
+				42BFC0C014E655C400E3797A /* EditName.m in Sources */,
+				42D1A59714E901840066142C /* DataBaseAccess.m in Sources */,
+				42D1A59D14E907DE0066142C /* singleton.m in Sources */,
+				42D1C23A14EA05FA00C23A56 /* ClockList.m in Sources */,
+				42D1C24514EA16EA00C23A56 /* FMDatabaseAdditions.m in Sources */,
+				42D1C24614EA16EA00C23A56 /* FMDatabase.m in Sources */,
+				42D1C24714EA16EA00C23A56 /* FMResultSet.m in Sources */,
+				42C1A14514EBAB42006710BC /* SoundList.m in Sources */,
+				42E6F31D14ECCC550004FEC8 /* SoundTableCell.m in Sources */,
+				42E6F32914ECDA7E0004FEC8 /* SoundDetail.m in Sources */,
+				42E6F32D14ECEE7A0004FEC8 /* ClockTableCell.m in Sources */,
+				42E6F33614ED012B0004FEC8 /* EditRepeat.m in Sources */,
+				428D726214F36A0300A2C04F /* NSString+Additions.m in Sources */,
+				42C70DC114F8C1CF006371DE /* RecordTableView.m in Sources */,
+				42C70DCC14F8DFAA006371DE /* SoundSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleClock_Prefix.pch;
+				INFOPLIST_FILE = "SimpleClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "简单闹钟";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleClock_Prefix.pch;
+				INFOPLIST_FILE = "SimpleClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "简单闹钟";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

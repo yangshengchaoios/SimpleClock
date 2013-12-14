@@ -1,0 +1,57 @@
+//
+// Prefix header for all source files of the 'Notifier' target in the 'Notifier' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#define initDB NO
+
+#define DEBUG_MODE
+
+#ifdef DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... ) 
+#endif
+
+#define DEVICEUDID [[UIDevice currentDevice] uniqueIdentifier]
+#define APPSESSION [singleton sharedSingleton]
+#define ClockMusic(x) ([APPSESSION getClockMusic:x])
+#define trim(x) [x stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+
+#define int2Number(i) [NSNumber numberWithInteger:i]
+#define TL_FLOATARG(x) ( (x) ? ((x) / (2 * (x))) : (((x) + 1) / 2) )
+#define num(x) (TL_FLOATARG(x) ? [NSNumber numberWithDouble:(x)] : [NSNumber numberWithLong:(x)])
+
+///---------------------------------------------------------------------------
+/// @name  Notification
+///---------------------------------------------------------------------------
+#define addNObserver(_selector,_name)\
+([[NSNotificationCenter defaultCenter] addObserver:self selector:_selector name:_name object:nil])
+#define removeNObserver(_name)\
+([[NSNotificationCenter defaultCenter] removeObserver:self name:_name object:nil])
+#define postN(_name)\
+([[NSNotificationCenter defaultCenter] postNotificationName:_name object:nil userInfo:nil])
+
+///---------------------------------------------------------------------------
+/// file manage
+///---------------------------------------------------------------------------
+#define DOCUMENT [APPSESSION documentPath]
+#define NATIVEDOCUMENT [APPSESSION nativeDocumentPath]
+
+
+//time
+#define CURRENTTIME(x) \
+([APPSESSION NSDateToNSString:x Format:@"HH:mm"])
+#define STRINGTODATE(x) \
+([APPSESSION NSStringToNSDate:x Format:@"yyyy-MM-dd HH:mm:ss"])
+
+
+///---------------------------------------------------------------------------
+/// @name navigationController
+///---------------------------------------------------------------------------
+#define PUSHNEXTVIEWCONTROLLER(_viewControllerName) \
+([self.navigationController pushViewController:[[[NSClassFromString(_viewControllerName) alloc] initWithNibName:_viewControllerName bundle:nil] autorelease] animated:YES])
